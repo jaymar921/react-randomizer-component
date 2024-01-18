@@ -1,0 +1,28 @@
+{
+  "name": "@jaymar921/react-randomizer",
+  "version": "1.0.0",
+  "description": "Randomizer Component for ReactJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaymar921/react-randomizer.git"
+  },
+  "keywords": [
+    "react-randomizer",
+    "randomizer"
+  ],
+  "author": "JayMar921",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaymar921/react-randomizer/issues"
+  },
+  "homepage": "https://github.com/jaymar921/react-randomizer#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

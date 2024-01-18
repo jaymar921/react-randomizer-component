@@ -1,0 +1,82 @@
+.text-loop-container {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  font-size: 20px;
+
+  transition: all 500ms;
+}
+
+.hide-scroller {
+  opacity: 0;
+  color: rgba(255, 255, 255, 0);
+}
+
+.shadow-top {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+}
+
+.shadow-bottom {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+}
+
+.scroll-text {
+  height: fit-content;
+  text-align: center;
+  /* animation properties */
+  transform: translateY(-80%);
+  /* animation: 2s linear 1s infinite running scrollingAnimation; */
+  z-index: -1;
+
+  transition: all 500ms;
+}
+
+.stop-text {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  margin: auto;
+}
+
+.stop-text p {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stop-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-text p {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes scrollingAnimation {
+  0% {
+    transform: translateY(-80%);
+  }
+
+  2% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
