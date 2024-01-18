@@ -1,6 +1,6 @@
 {
   "name": "@jaymar921/react-randomizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randomizer Component for ReactJS",
   "main": "index.js",
   "type": "module",
