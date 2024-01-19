@@ -1,15 +1,16 @@
 {
   "name": "@jaymar921/react-randomizer",
-  "version": "1.0.3",
+  "version": "0.0.0-development",
   "description": "Randomizer Component for ReactJS",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release --branches main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaymar921/react-randomizer.git"
+    "url": "https://github.com/jaymar921/react-randomizer.git"
   },
   "keywords": [
     "react-randomizer",
@@ -24,5 +25,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^23.0.0"
   }
 }
