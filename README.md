@@ -1,4 +1,4 @@
-# react-randomizer
+# react-randomizer-component
 
 > By: [Jaymar921](https://github.com/jaymar921)
 
@@ -77,4 +77,4 @@ export default App
 ```
 
 # Issues / Contribute
-Github repo: [react-randomizer](https://github.com/jaymar921/react-randomizer)
+Github repo: [react-randomizer-component](https://github.com/jaymar921/react-randomizer-component)

@@ -7,17 +7,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
+    "push": "git add . && npm run commit && git push",
     "semantic-release": "semantic-release --branches main --access public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaymar921/react-randomizer.git"
+    "url": "git+https://github.com/jaymar921/react-randomizer-component.git"
   },
   "release": {
     "branches": [
       "main"
     ],
-    "repositoryUrl": "https://github.com/jaymar921/react-randomizer.git"
+    "repositoryUrl": "https://github.com/jaymar921/react-randomizer-component.git"
   },
   "keywords": [
     "react-randomizer",
@@ -26,9 +27,9 @@
   "author": "JayMar921",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaymar921/react-randomizer/issues"
+    "url": "https://github.com/jaymar921/react-randomizer-component/issues"
   },
-  "homepage": "https://github.com/jaymar921/react-randomizer#readme",
+  "homepage": "https://github.com/jaymar921/react-randomizer-component#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
