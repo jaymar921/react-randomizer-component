@@ -14,12 +14,13 @@ export function Randomizer({
   containerWidth = 300,
   containerHeight = 100,
   className = "",
+  speed = 8,
 }) {
   const [data, setData] = useState([...items]);
   const [ended, setEnded] = useState(false);
   const [winner, setWinner] = useState("");
   const [cancelId, setCancelId] = useState(null);
-  const [itemLength, setItemLength] = useState(8); // Speedup a little, 8 will be the value
+  const [itemLength, setItemLength] = useState(5);
 
   useEffect(() => {
     if (command.toLowerCase() === "start") {
@@ -96,7 +97,7 @@ export function Randomizer({
             animationName: "scrollingAnimation",
             animationDelay: "1s",
             animationIterationCount: "infinite",
-            animationDuration: `${itemLength / 18}s`,
+            animationDuration: `${itemLength / (10 + speed)}s`,
             animationTimingFunction: "linear",
           }}
         >

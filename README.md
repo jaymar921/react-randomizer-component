@@ -32,6 +32,7 @@ npm i @jaymar921/react-randomizer-component
 | containerWidth | Change the width of the Randomizer Div Container. | `300` |
 | containerHeight | Change the height of the Randomizer Div Container. | `100` |
 | className | Custom className style for the Randomizer Div Container. | `empty string` |
+| speed | Change the speed of the animation. | `8` |
 
 # How to use
 ```js
