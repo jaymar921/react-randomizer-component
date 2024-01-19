@@ -9,12 +9,12 @@ A simple Randomizer Component for react projects that can be used for raffle eve
 # Installation
 
 ```
-npm i @jaymar921/react-randomizer
+npm i @jaymar921/react-randomizer-component
 ```
 
 # Demo
 
-[Open Webiste - Randomizer-POC-Vercel](https://randomizer-poc.vercel.app/)
+[Live Website](https://randomizer-poc.vercel.app/)
 
 # Component
 ### Randomizer
@@ -23,7 +23,7 @@ npm i @jaymar921/react-randomizer
 | backgroundColor | Change the background color of the Randomizer Container that matches your site's background. | `white` |
 | textColor | Change the text color of the randomizer (shuffling text). | `black` |
 | winnerTextColor | Change the text color of the randomizer (winner text shown). | `black` |
-|command | Randomizer Command, `start` command will start the suffle effect, `clear` command will clear the screen and ready for reshuffle, `reset` command reset's the items list back to original. | undefined |
+|command | Randomizer Command, `start` command will start the shuffle effect, `clear` command will clear the screen and ready for reshuffle, `reset` command reset's the items list back to original. | undefined |
 | items | List\<string\>, data that will be used for shuffling. | undefined |
 | duration | The duration of the shuffling effect before a winner is drawn. | `1000` in milliseconds |
 | completeCallback | Invoked when a winner is selected, it will pass a parameter of `string`, once a winner is selected, the items list will be modified, removing the selected winner in the array. | `(winner) => { /* your logic goes here */}` |
@@ -38,7 +38,7 @@ npm i @jaymar921/react-randomizer
 // app.jsx
 import { useState } from 'react'
 import './App.css'
-import { Randomizer } from '@jaymar921/react-randomizer'
+import { Randomizer } from '@jaymar921/react-randomizer-component'
 
 function App() {
   const list = ['Jayharron', 'Rodney', 'Kenneth', 'Ada', 'Neal', 'Alyssa', 'Jhon Mark', 'Bo', 'Harold Inacay', 'Harold Cuico', 'Xerxes', 'Raph', 'CJ', 'Dylan'];
