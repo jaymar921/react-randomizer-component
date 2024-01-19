@@ -19,7 +19,7 @@ export function Randomizer({
   const [ended, setEnded] = useState(false);
   const [winner, setWinner] = useState("");
   const [cancelId, setCancelId] = useState(null);
-  const [itemLength, setItemLength] = useState(5);
+  const [itemLength, setItemLength] = useState(8); // Speedup a little, 8 will be the value
 
   useEffect(() => {
     if (command.toLowerCase() === "start") {
@@ -28,6 +28,7 @@ export function Randomizer({
         setTimeout(() => {
           // get the length
           const length = data.length;
+          // We get the winner by selecting a random index from 0 to length
           const selectedIndex = Math.floor(Math.random() * length);
           let _winner = data[selectedIndex];
           if (!_winner) {
@@ -95,7 +96,7 @@ export function Randomizer({
             animationName: "scrollingAnimation",
             animationDelay: "1s",
             animationIterationCount: "infinite",
-            animationDuration: `${itemLength / 20}s`,
+            animationDuration: `${itemLength / 18}s`,
             animationTimingFunction: "linear",
           }}
         >
