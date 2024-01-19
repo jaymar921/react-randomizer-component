@@ -23,15 +23,15 @@ npm i @jaymar921/react-randomizer-component
 | backgroundColor | Change the background color of the Randomizer Container that matches your site's background. | `white` |
 | textColor | Change the text color of the randomizer (shuffling text). | `black` |
 | winnerTextColor | Change the text color of the randomizer (winner text shown). | `black` |
-|command | Randomizer Command, `start` command will start the shuffle effect, `clear` command will clear the screen and ready for reshuffle, `reset` command reset's the items list back to original. | undefined |
-| items | List\<string\>, data that will be used for shuffling. | undefined |
+|command | Randomizer Command, `start` command will start the shuffle effect, `clear` command will clear the screen and ready for reshuffle, `reset` command reset's the items list back to original. | `empty string` |
+| items | List\<string\>, data that will be used for shuffling. | `[]` |
 | duration | The duration of the shuffling effect before a winner is drawn. | `1000` in milliseconds |
 | completeCallback | Invoked when a winner is selected, it will pass a parameter of `string`, once a winner is selected, the items list will be modified, removing the selected winner in the array. | `(winner) => { /* your logic goes here */}` |
 | fontWeight | Change the weight of the font. | `0` |
 | textSize | Size of the Randomizer Text in pixels. | `20` |
 | containerWidth | Change the width of the Randomizer Div Container. | `300` |
 | containerHeight | Change the height of the Randomizer Div Container. | `100` |
-| className | Custom className style for the Randomizer Div Container. | undefined |
+| className | Custom className style for the Randomizer Div Container. | `empty string` |
 
 # How to use
 ```js

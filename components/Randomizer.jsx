@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./Randomizer.css";
 
 export function Randomizer({
-  items,
-  command,
+  items = [],
+  command = "",
   duration = 1000,
   completeCallback = (e) => {},
   backgroundColor = "white",
