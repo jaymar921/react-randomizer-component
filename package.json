@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
-    "semantic-release": "semantic-release --branches main"
+    "semantic-release": "semantic-release --branches main --access=public"
   },
   "repository": {
     "type": "git",
