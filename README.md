@@ -2,9 +2,10 @@
 
 > By: [Jaymar921](https://github.com/jaymar921)
 
-![Figure](randomizer-in-action.gif)
-
 A simple Randomizer Component for react projects that can be used for raffle events. With animated scrolling effect 📜. 
+There is also a TextLoop component which might be useful to some projects.
+
+<img height='300px' src='textloop-in-action.gif'/> <img height='300px' src='randomizer-in-action.gif'/>
 
 # Installation
 
@@ -34,7 +35,23 @@ npm i @jaymar921/react-randomizer-component
 | className | Custom className style for the Randomizer Div Container. | `empty string` |
 | speed | Change the speed of the animation. | `8` |
 
-# How to use
+### TextLoop
+| Props | Description | default |
+| --- | --- | --- |
+| backgroundColor | Change the background color of the Randomizer Container that matches your site's background. | `white` |
+| textColor | Change the text color of the randomizer (shuffling text). | `black` |
+| items | List\<string\>, data that will be used for text looping. | `[]` |
+| fontWeight | Change the weight of the font. | `0` |
+| textSize | Size of the Randomizer Text in pixels. | `20` |
+| containerWidth | Change the width of the Randomizer Div Container. | `300` |
+| containerHeight | Change the height of the Randomizer Div Container. | `100` |
+| className | Custom className style for the Randomizer Div Container. | `empty string` |
+| speed | Change the speed of the animation. | `3` |
+| reverse | Reverse the looping effect from top->down to down->top | `false` |
+| smoothEdges | Have a smooth edge effect, the color will be matched to the backgroundColor | `false` |
+
+# How to use 
+### Randomizer
 ```js
 // app.jsx
 import { useState } from 'react'
@@ -70,6 +87,31 @@ function App() {
         <button onClick={() => {setCommand('clear')}}>Clear</button>
         <button onClick={() => {setCommand('reset')}}>Reset</button>
       </div>
+    </>
+  )
+}
+
+export default App
+```
+
+### TextLoop
+```js
+// app.jsx
+import { useState } from 'react'
+import './App.css'
+import { TextLoop } from '@jaymar921/react-randomizer-component'
+
+function App() {
+  const list = ['Jayharron', 'Rodney', 'Kenneth', 'Ada', 'Neal', 'Alyssa', 'Jhon Mark', 'Bo', 'Harold Inacay', 'Harold Cuico', 'Xerxes', 'Raph', 'CJ', 'Dylan'];
+
+  return (
+    <>
+      <TextLoop 
+        items={list}              /* List of items to be looped (array of string, supports <a href=''>string</a>) */
+        containerWidth={500}      /* Width of the Randomizer container  | default: 300 */
+        containerHeight={300}     /* Height of the Randomizer container | default: 100 */
+        />        
+      <div>
     </>
   )
 }

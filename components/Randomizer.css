@@ -12,7 +12,8 @@
   color: rgba(255, 255, 255, 0);
 }
 
-.shadow-top {
+.shadow-top,
+.shadow-top-half {
   position: relative;
   top: 0;
   width: 100%;
@@ -20,11 +21,20 @@
   z-index: 1;
 }
 
-.shadow-bottom {
+.shadow-top-half {
+  height: 50%;
+}
+
+.shadow-bottom,
+.shadow-bottom-half {
   position: relative;
   width: 100%;
   height: 40%;
   z-index: 1;
+}
+
+.shadow-bottom-half {
+  height: 50%;
 }
 
 .scroll-text {
@@ -78,5 +88,37 @@
   }
   100% {
     transform: translateY(-20%);
+  }
+}
+
+@keyframes scollingAnimation_1 {
+  0% {
+    transform: translateY(-80%);
+  }
+
+  2% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes scollingAnimation_2 {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  2% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80%);
   }
 }
